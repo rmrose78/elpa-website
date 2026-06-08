@@ -1,7 +1,4 @@
-@use '@/styles/_variables.scss' as *;
-@use '@/styles/_mixins.scss' as *;
-
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 *,
 *::before,
@@ -13,31 +10,22 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
 }
 
 body {
-  background-color: $navy;
-  color: $white;
-  font-family: $font-body;
-  line-height: 1.6;
+  font-family: 'DM Sans', sans-serif;
+  background-color: #f5f0e8;
+  color: #1e1c18;
+  font-size: 1rem;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-heading;
-  line-height: 1.2;
-}
-
-code,
-pre,
-kbd {
-  font-family: $font-mono;
+img,
+video {
+  max-width: 100%;
+  display: block;
 }
 
 a {
@@ -50,20 +38,4 @@ button {
   border: none;
   background: none;
   font-family: inherit;
-}
-
-img,
-canvas {
-  display: block;
-  max-width: 100%;
-}
-
-:focus-visible {
-  outline: 2px solid $electric-blue;
-  outline-offset: 3px;
-}
-
-::selection {
-  background: $electric-blue;
-  color: $navy;
 }

@@ -1,0 +1,30 @@
+@use '@/styles/_variables.scss' as *;
+@use '@/styles/_mixins.scss' as *;
+
+.bar {
+  background-color: $rust;
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+}
+
+.text {
+  font-family: $font-body;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba($white, 0.9);
+}
+
+.link {
+  font-family: $font-body;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: $white;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: opacity $transition-base;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

@@ -1,11 +1,19 @@
+@use '@/styles/_variables.scss' as *;
+
+@mixin small {
+  @media (min-width: #{$bp-sm}) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media (min-width: #{$bp-md}) {
     @content;
   }
 }
 
-@mixin small {
-  @media (min-width: #{$bp-sm}) {
+@mixin large {
+  @media (min-width: #{$bp-lg}) {
     @content;
   }
 }
@@ -15,6 +23,16 @@
 
   @include desktop {
     padding: $section-py-desktop $section-px-desktop;
+  }
+}
+
+@mixin wrap {
+  max-width: $wrap-max;
+  margin: 0 auto;
+  padding: 0 $section-px-mobile;
+
+  @include desktop {
+    padding: 0 $section-px-desktop;
   }
 }
 

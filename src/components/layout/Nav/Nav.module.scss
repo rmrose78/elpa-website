@@ -1,0 +1,209 @@
+@use '@/styles/_variables.scss' as *;
+@use '@/styles/_mixins.scss' as *;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 500;
+  background-color: $white;
+  border-bottom: 1px solid $border;
+}
+
+.nav {
+  width: 100%;
+}
+
+.inner {
+  @include wrap;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+// ─── Logo ─────────────────────────────────────────────────────────────────────
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-shrink: 0;
+}
+
+.logoSeal {
+  width: 38px;
+  height: 38px;
+  border: 2px solid $rust;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: $rust;
+  transition: background-color $transition-base;
+
+  .logo:hover & {
+    background-color: $rust-pale;
+  }
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.logoName {
+  font-family: $font-heading;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: $ink;
+  line-height: 1.1;
+}
+
+.logoSub {
+  font-family: $font-body;
+  font-size: 0.625rem;
+  color: $ink-mid;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+// ─── Desktop links ────────────────────────────────────────────────────────────
+
+.desktopLinks {
+  display: none;
+  list-style: none;
+  align-items: center;
+  gap: 0.125rem;
+
+  @include large {
+    display: flex;
+  }
+}
+
+.navLink {
+  font-family: $font-body;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: $ink-mid;
+  padding: 0.4375rem 0.8125rem;
+  border-radius: $radius;
+  transition:
+    color $transition-base,
+    background-color $transition-base;
+
+  &:hover {
+    color: $ink;
+    background-color: $parchment;
+  }
+}
+
+// ─── Right side ───────────────────────────────────────────────────────────────
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.donateBtn {
+  display: none;
+  background-color: $rust;
+  color: $white;
+  font-family: $font-body;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  padding: 0.5625rem 1.125rem;
+  border-radius: $radius;
+  transition: opacity $transition-base;
+
+  &:hover {
+    opacity: 0.88;
+  }
+
+  @include small {
+    display: block;
+  }
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0.25rem;
+
+  @include large {
+    display: none;
+  }
+
+  span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: $ink;
+    border-radius: 2px;
+    transition: opacity $transition-base;
+  }
+
+  &:hover span {
+    opacity: 0.5;
+  }
+}
+
+// ─── Mobile nav ───────────────────────────────────────────────────────────────
+
+.mobileNav {
+  display: none;
+  background-color: $white;
+  border-bottom: 1px solid $border;
+  padding: 0.5rem 1.25rem 1rem;
+
+  &.mobileNavOpen {
+    display: block;
+  }
+
+  @include large {
+    display: none !important;
+  }
+}
+
+.mobileLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileLink {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family: $font-body;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: $ink;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid $border;
+  transition: color $transition-base;
+
+  &:hover {
+    color: $rust;
+  }
+}
+
+.mobileDonateBtn {
+  margin-top: 0.875rem;
+  width: 100%;
+  background-color: $rust;
+  color: $white;
+  font-family: $font-body;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 0.8125rem;
+  border-radius: $radius-lg;
+  transition: opacity $transition-base;
+
+  &:hover {
+    opacity: 0.88;
+  }
+}
