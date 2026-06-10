@@ -1,5 +1,4 @@
 import styles from './HeroSection.module.scss'
-import heroImg from '@/assets/EagleLakeRice.jpg'
 
 interface Stat {
   value: string
