@@ -1,0 +1,168 @@
+@use '@/styles/_variables.scss' as *;
+@use '@/styles/_mixins.scss' as *;
+
+.section {
+  background-color: $white;
+  padding: 5rem 0;
+
+  @include large {
+    padding: 5rem 0;
+  }
+}
+
+.inner {
+  @include wrap;
+}
+
+.eyebrow {
+  font-family: $font-body;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: $rust;
+  margin-bottom: 0.625rem;
+}
+
+.heading {
+  font-family: $font-heading;
+  font-size: clamp(1.625rem, 3.5vw, 2.375rem);
+  font-weight: 700;
+  color: $ink;
+  line-height: 1.15;
+  margin-bottom: 3rem;
+}
+
+// ─── Two-col grid ─────────────────────────────────────────────────────────────
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+
+  @include large {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+}
+
+// ─── Credentials list ─────────────────────────────────────────────────────────
+
+.credentialsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-bottom: 1.75rem;
+}
+
+.credentialsItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.625rem;
+  font-family: $font-serif;
+  font-size: 0.9375rem;
+  color: $ink-mid;
+  line-height: 1.55;
+}
+
+.checkIcon {
+  color: $rust;
+  font-size: 0.875rem;
+  margin-top: 0.125rem;
+  flex-shrink: 0;
+  font-style: normal;
+}
+
+// ─── Org badges ───────────────────────────────────────────────────────────────
+
+.orgBadges {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.orgBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: $parchment;
+  border: 1px solid $border;
+  border-radius: $radius;
+  padding: 0.75rem 1rem;
+}
+
+.orgBadgeIcon {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: $rust;
+  flex-shrink: 0;
+}
+
+.orgBadgeText {
+  font-family: $font-body;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: $ink;
+  line-height: 1.3;
+}
+
+.orgBadgeSub {
+  font-family: $font-body;
+  font-size: 0.6875rem;
+  color: $ink-mid;
+  margin-top: 0.125rem;
+}
+
+// ─── Right col ────────────────────────────────────────────────────────────────
+
+.rightCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.imgPlaceholder {
+  width: 100%;
+  height: 260px;
+  background-color: $parchment-dark;
+  border: 2px dashed $border-med;
+  border-radius: $radius-lg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.imgPlaceholderLabel {
+  font-family: $font-body;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $ink-faint;
+}
+
+.imgPlaceholderHint {
+  font-family: $font-body;
+  font-size: 0.6875rem;
+  color: $ink-faint;
+  text-align: center;
+  padding: 0 1.25rem;
+}
+
+.body {
+  font-family: $font-serif;
+  font-size: 0.9375rem;
+  color: $ink-mid;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

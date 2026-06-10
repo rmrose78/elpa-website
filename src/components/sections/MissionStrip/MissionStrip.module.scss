@@ -1,0 +1,55 @@
+@use '@/styles/_variables.scss' as *;
+@use '@/styles/_mixins.scss' as *;
+
+.strip {
+  background-color: $parchment-dark;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+  padding: 2.25rem 0;
+}
+
+.inner {
+  @include wrap;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.quote {
+  flex: 1;
+  min-width: 260px;
+  font-family: $font-heading;
+  font-style: italic;
+  font-size: clamp(1.0625rem, 2.2vw, 1.3125rem);
+  color: $ink;
+  line-height: 1.5;
+}
+
+.highlight {
+  color: $rust;
+}
+
+.divider {
+  width: 1px;
+  height: 48px;
+  background-color: $border-med;
+  flex-shrink: 0;
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.meta {
+  font-family: $font-body;
+  font-size: 0.8125rem;
+  color: $ink-mid;
+  line-height: 1.6;
+
+  strong {
+    color: $ink;
+    font-weight: 600;
+  }
+}
