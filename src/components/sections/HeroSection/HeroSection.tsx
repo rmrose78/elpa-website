@@ -1,4 +1,5 @@
 import styles from './HeroSection.module.scss'
+import heroImg from '@/assets/EagleLakeRice.jpg'
 
 interface Stat {
   value: string
@@ -20,13 +21,6 @@ export default function HeroSection() {
 
   return (
     <section className={styles.hero} id="hero">
-      {/* Background image placeholder */}
-      <div className={styles.imgPlaceholder} aria-hidden="true">
-        <span className={styles.imgPlaceholderLabel}>
-          Photo placeholder — 1904 Calaboose or Main St.
-        </span>
-      </div>
-
       {/* Overlays */}
       <div className={styles.texture} aria-hidden="true" />
       <div className={styles.gradient} aria-hidden="true" />

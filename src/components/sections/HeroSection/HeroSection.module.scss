@@ -7,9 +7,15 @@
   min-height: 560px;
   display: flex;
   align-items: flex-end;
+  background-image: url('@/assets/EagleLakeRice.jpg');
+  background-size: 120%;
+  background-position: 20% 30%;
+  background-repeat: no-repeat;
 
   @include desktop {
     min-height: 680px;
+    background-size: 110%;
+    background-position: 15% 25%;
   }
 }
 
@@ -59,9 +65,9 @@
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(20, 18, 14, 0.95) 0%,
-    rgba(20, 18, 14, 0.5) 50%,
-    transparent 100%
+    rgba(10, 8, 6, 0.97) 0%,
+    rgba(10, 8, 6, 0.75) 45%,
+    rgba(10, 8, 6, 0.4) 100%
   );
   pointer-events: none;
 }

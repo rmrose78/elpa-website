@@ -1,45 +1,101 @@
-# rr-dev
+# Eagle Lake Preservation Alliance — Website Rebuild
 
-Personal portfolio site for Ryan Rose — frontend developer.
+A modern, mobile-first website for the [Eagle Lake Preservation Alliance](https://eaglelakepreservationalliance.netlify.app), a 501(c)(3) nonprofit in Eagle Lake, Texas dedicated to historic preservation and restoration.
+
+**Live site:** https://eaglelakepreservationalliance.netlify.app
+
+---
+
+## About the Project
+
+The Eagle Lake Preservation Alliance's previous website was built in Microsoft FrontPage in 2007 and had not been updated since. This project is a full ground-up rebuild — modern stack, mobile-first, and designed to honor both the organization's mission and the legacy of the original developer.
+
+This is a donated services project built pro bono as a first freelance engagement.
+
+---
+
+## Features
+
+- **Single-page scrollable layout** — Hero, Mission, About & Credentials, Accomplishments, Buildings Saved, Donate, Contact
+- **Building detail modals** — each historic building card opens an accessible modal with full history, including the Craig Adams building demolished in 2007
+- **Donation section** — PayPal Giving Fund integration shell (zero transaction fees for verified 501(c)(3)s)
+- **Contact form** — Netlify Forms shell, routes submissions to the association's inbox
+- **Custom gate seal logo** — SVG homage to the original 1907-style gate motif from the previous developer's logo
+- **Custom favicon** — two-color SVG favicon matching the seal
+- **Fully accessible** — Radix UI Dialog for focus-trapped modals, semantic HTML throughout, ARIA labels, keyboard navigation
+
+---
 
 ## Stack
 
-- Vite 8 + React 19 + TypeScript
-- SCSS Modules with Tailwind v4 via `@import "tailwindcss"`
-- Framer Motion for animations
-- Radix UI for accessible primitives (Dialog, VisuallyHidden)
-- Jest + React Testing Library for unit/component tests
+| Tool                           | Purpose                                        |
+| ------------------------------ | ---------------------------------------------- |
+| Vite 8 + React 19 + TypeScript | Core framework                                 |
+| SCSS Modules                   | Component-scoped styles, camelCase class names |
+| Radix UI Dialog                | Accessible building detail modals              |
+| @tabler/icons-react            | Icon system                                    |
+| Framer Motion                  | Animation primitives                           |
+| Netlify                        | Hosting + form handling                        |
 
-## Conventions
+---
 
-- Components: PascalCase (`HeroSection.tsx`)
-- Files: kebab-case (`hero-section.module.scss`)
-- Path alias: `@/` maps to `src/`
-- No inline styles — ever
-- SCSS lives next to its component, not in a global folder
-- Global styles, variables, and mixins live in `src/styles/`
+## Design
 
-## Accessibility
+- **Color palette**: Warm parchment backgrounds, deep ink text, rust (`#8B3A1A`) as the primary CTA color, gold accents
+- **Typography**: Playfair Display (headings) · Source Serif 4 (body) · DM Sans (UI)
+- **Approach**: Mobile-first, single scrollable page, editorial feel — "Texas heritage magazine meets modern nonprofit"
 
-Section 508 / WCAG 2.1 AA is first-class throughout. Every interactive element needs a keyboard path. Modals trap focus and return it on close. Animations respect `prefers-reduced-motion`.
+---
 
-## Scripts
-
-- `npm run dev` — start dev server
-- `npm run build` — production build
-- `npm run format` — Prettier
-- `npm test` — Jest
-- `npm run test:watch` — Jest watch mode
-
-## Structure
+## Project Structure
 
 src/
 components/
-layout/ # Nav, Footer
-sections/ # Hero, About, Skills, Experience, Testimonials, Contact
-ui/ # Button, Modal, Pill, StatCard — reusable primitives
-hooks/ # Custom React hooks
-styles/ # globals.scss, \_variables.scss, \_mixins.scss
-types/ # Shared TypeScript types
-utils/ # Pure helper functions
-assets/ # Fonts, images
+layout/ # AnnouncementBar, Nav, Footer
+sections/ # HeroSection, MissionStrip, AboutSection,
+
+# AccomplishmentsSection, PreservationSection,
+
+# DonateSection, ContactSection
+
+styles/ # \_variables.scss, \_mixins.scss, globals.scss
+assets/ # elpa-seal-nav.svg
+public/
+elpa-favicon.svg
+
+---
+
+## Before & After
+
+|                   | Before                   | After                                     |
+| ----------------- | ------------------------ | ----------------------------------------- |
+| **Built with**    | Microsoft FrontPage 2007 | Vite + React 19 + TypeScript              |
+| **Last updated**  | 2007                     | 2025                                      |
+| **Mobile**        | No                       | Yes — mobile-first                        |
+| **Accessibility** | None                     | WCAG 2.1 AA                               |
+| **Deployment**    | Manual FTP               | Auto-deploy via Netlify on push to `main` |
+
+---
+
+## Status
+
+The site is live and awaiting client feedback on:
+
+- Final photo assets for buildings and hero section
+- PayPal Giving Fund account details to wire up donation flow
+- Contact form email routing
+- Domain migration from `elpa.org`
+
+---
+
+## Developer Notes
+
+See `CLAUDE.md` for full project context, design token reference, and pending integration notes.
+
+---
+
+## Author
+
+**Ryan Rose** — [ryan.rose.dev@gmail.com](mailto:ryan.rose.dev@gmail.com)
+
+_Donated services project · Eagle Lake Preservation Alliance · Eagle Lake, Texas_
