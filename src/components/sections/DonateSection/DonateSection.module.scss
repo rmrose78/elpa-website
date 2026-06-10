@@ -233,6 +233,16 @@
   &:focus {
     border-color: $rust;
   }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px $parchment inset;
+    -webkit-text-fill-color: $ink;
+    caret-color: $ink;
+    border-color: $border-med;
+    transition: background-color 9999s ease-in-out 0s;
+  }
 }
 
 // ─── Submit ───────────────────────────────────────────────────────────────────

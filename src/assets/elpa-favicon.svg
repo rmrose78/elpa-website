@@ -1,0 +1,46 @@
+<svg width="32" height="32" viewBox="0 0 32 32" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Eagle Lake Preservation Alliance</title>
+  <circle cx="16" cy="16" r="16" fill="#8B3A1A"/>
+  <g transform="translate(16,17) scale(0.072) translate(-200,-228)">
+    <rect x="72" y="200" width="56" height="18" rx="2" fill="white"/>
+    <rect x="76" y="218" width="48" height="120" fill="white"/>
+    <rect x="96" y="175" width="8" height="26" rx="2" fill="white"/>
+    <ellipse cx="100" cy="155" rx="30" ry="26" fill="white"/>
+    <ellipse cx="80"  cy="163" rx="17" ry="15" fill="white"/>
+    <ellipse cx="120" cy="163" rx="17" ry="15" fill="white"/>
+    <ellipse cx="88"  cy="145" rx="16" ry="15" fill="white"/>
+    <ellipse cx="112" cy="145" rx="16" ry="15" fill="white"/>
+    <polygon points="100,118 86,145 114,145" fill="white"/>
+    <polygon points="100,118 88,138 112,138" fill="white"/>
+    <ellipse cx="100" cy="138" rx="12" ry="10" fill="white"/>
+    <ellipse cx="90"  cy="148" rx="9"  ry="8"  fill="white"/>
+    <ellipse cx="112" cy="150" rx="8"  ry="7"  fill="white"/>
+    <rect x="272" y="200" width="56" height="18" rx="2" fill="white"/>
+    <rect x="276" y="218" width="48" height="120" fill="white"/>
+    <rect x="296" y="175" width="8" height="26" rx="2" fill="white"/>
+    <ellipse cx="300" cy="155" rx="30" ry="26" fill="white"/>
+    <ellipse cx="280" cy="163" rx="17" ry="15" fill="white"/>
+    <ellipse cx="320" cy="163" rx="17" ry="15" fill="white"/>
+    <ellipse cx="288" cy="145" rx="16" ry="15" fill="white"/>
+    <ellipse cx="312" cy="145" rx="16" ry="15" fill="white"/>
+    <polygon points="300,118 286,145 314,145" fill="white"/>
+    <polygon points="300,118 288,138 312,138" fill="white"/>
+    <ellipse cx="300" cy="138" rx="12" ry="10" fill="white"/>
+    <ellipse cx="290" cy="148" rx="9"  ry="8"  fill="white"/>
+    <ellipse cx="312" cy="150" rx="8"  ry="7"  fill="white"/>
+    <rect x="145" y="220" width="8" height="116" fill="white"/>
+    <rect x="247" y="220" width="8" height="116" fill="white"/>
+    <rect x="145" y="327" width="110" height="7" fill="white"/>
+    <rect x="145" y="244" width="110" height="6" fill="white"/>
+    <path d="M 149,222 Q 149,162 200,162 Q 251,162 251,222" fill="none" stroke="white" stroke-width="14" stroke-linecap="round"/>
+    <path d="M200,244 C194,236 168,218 168,196 C168,180 177,172 186,172 C192,172 197,176 200,181 C203,176 208,172 214,172 C223,172 232,180 232,196 C232,218 206,236 200,244Z" fill="none" stroke="white" stroke-width="10"/>
+    <path d="M 153,232 Q 149,220 156,213 Q 163,206 170,212 Q 176,218 171,225 Q 166,231 161,228 Q 157,224 160,220 Q 163,217 166,220" fill="none" stroke="white" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 247,232 Q 251,220 244,213 Q 237,206 230,212 Q 224,218 229,225 Q 234,231 239,228 Q 243,224 240,220 Q 237,217 234,220" fill="none" stroke="white" stroke-width="7" stroke-linecap="round"/>
+    <rect x="168" y="254" width="10" height="73" fill="white"/>
+    <polygon points="173,232 162,256 184,256" fill="white"/>
+    <rect x="196" y="254" width="10" height="73" fill="white"/>
+    <polygon points="201,228 190,254 212,254" fill="white"/>
+    <rect x="224" y="254" width="10" height="73" fill="white"/>
+    <polygon points="229,232 218,256 240,256" fill="white"/>
+  </g>
+</svg>

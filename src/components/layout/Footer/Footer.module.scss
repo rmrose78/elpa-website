@@ -1,0 +1,106 @@
+@use '@/styles/_variables.scss' as *;
+@use '@/styles/_mixins.scss' as *;
+
+.footer {
+  background-color: $footer-bg;
+  padding: 3rem 0 1.75rem;
+}
+
+.inner {
+  @include wrap;
+}
+
+// ─── Top row ──────────────────────────────────────────────────────────────────
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2.25rem;
+
+  @include desktop {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2.5rem;
+  }
+}
+
+// ─── Brand col ────────────────────────────────────────────────────────────────
+
+.brand {
+  max-width: 260px;
+}
+
+.brandName {
+  font-family: $font-heading;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: $white;
+  margin-bottom: 0.25rem;
+}
+
+.brandSub {
+  font-family: $font-body;
+  font-size: 0.625rem;
+  color: rgba($white, 0.25);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.brandDesc {
+  font-family: $font-body;
+  font-size: 0.75rem;
+  color: rgba($white, 0.3);
+  line-height: 1.65;
+}
+
+// ─── Link cols ────────────────────────────────────────────────────────────────
+
+.colTitle {
+  font-family: $font-body;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: $gold-light;
+  margin-bottom: 0.875rem;
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5625rem;
+}
+
+.link {
+  font-family: $font-body;
+  font-size: 0.8125rem;
+  color: rgba($white, 0.35);
+  text-align: left;
+  transition: color $transition-base;
+
+  &:hover {
+    color: rgba($white, 0.7);
+  }
+}
+
+// ─── Bottom bar ───────────────────────────────────────────────────────────────
+
+.bottom {
+  border-top: 1px solid rgba($white, 0.07);
+  padding-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.copy {
+  font-family: $font-body;
+  font-size: 0.6875rem;
+  color: rgba($white, 0.18);
+}

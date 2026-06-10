@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import styles from './Nav.module.scss'
+import elpaSeal from '@/assets/elpa-seal-nav.svg'
 
 const NAV_LINKS = [
   { label: 'About', href: '#about' },
@@ -28,7 +29,7 @@ export default function Nav() {
             aria-label="Eagle Lake Preservation Alliance — back to top"
           >
             <div className={styles.logoSeal} aria-hidden="true">
-              <svg
+              {/* <svg
                 width="16"
                 height="16"
                 viewBox="0 0 24 24"
@@ -38,7 +39,13 @@ export default function Nav() {
               >
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                 <polyline points="9 22 9 12 15 12 15 22" />
-              </svg>
+              </svg> */}
+              <img
+                src={elpaSeal}
+                width={44}
+                height={44}
+                alt="Eagle Lake Preservation Alliance seal"
+              />
             </div>
             <div className={styles.logoText}>
               <span className={styles.logoName}>

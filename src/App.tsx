@@ -6,8 +6,8 @@ import AboutSection from '@/components/sections/AboutSection/AboutSection'
 import AccomplishmentsSection from '@/components/sections/AccomplishmentsSection/AccomplishmentsSection'
 import PreservationSection from '@/components/sections/PreservationSection/PreservationSection'
 import DonateSection from '@/components/sections/DonateSection/DonateSection'
-// import ContactSection from '@/components/sections/ContactSection/ContactSection'
-// import Footer from '@/components/layout/Footer/Footer'
+import ContactSection from '@/components/sections/ContactSection/ContactSection'
+import Footer from '@/components/layout/Footer/Footer'
 
 export default function App() {
   return (
@@ -21,7 +21,9 @@ export default function App() {
         <AccomplishmentsSection />
         <PreservationSection />
         <DonateSection />
+        <ContactSection />
       </main>
+      <Footer />
     </>
   )
 }

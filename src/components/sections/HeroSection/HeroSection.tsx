@@ -57,7 +57,7 @@ export default function HeroSection() {
             </button>
             <button
               className={styles.btnGhost}
-              onClick={() => handleScroll('#preservation')}
+              onClick={() => handleScroll('#buildings')}
             >
               See What We've Saved
             </button>
