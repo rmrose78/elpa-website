@@ -79,12 +79,14 @@ elpa-favicon.svg
 
 ## Status
 
-The site is live and awaiting client feedback on:
+Front-end build is complete, live, and deployed. Remaining items are
+client-dependent, not build-dependent:
 
-- Final photo assets for buildings and hero section
-- PayPal Giving Fund account details to wire up donation flow
-- Contact form email routing
-- Domain migration from `elpa.org`
+- Final building photos (placeholders currently in place from legacy site scrape)
+- Payment processor decision for the donation flow (PayPal Giving Fund
+  shell is built and ready to connect, zero fees for verified 501(c)(3)s)
+- Contact form email routing destination
+- Domain migration from elpa.org
 
 ---
 
