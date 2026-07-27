@@ -11,6 +11,12 @@ node_modules
 dist
 dist-ssr
 *.local
+.claude/settings.local.json
+
+# Playwright / Lighthouse a11y sweep output
+test-results/
+playwright-report/
+lighthouse-a11y-report.html
 
 # Editor directories and files
 .vscode/*

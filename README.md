@@ -94,6 +94,8 @@ client-dependent, not build-dependent:
 
 See `CLAUDE.md` for full project context, design token reference, and pending integration notes.
 
+This project follows a structured AI-assisted development workflow: feature discovery → PRD → GitHub issues → test-driven implementation (`.claude/skills/`), the same pipeline used on this developer's other projects. Every issue gets its own branch; nothing lands on `main` without passing tests.
+
 ---
 
 ## Author
