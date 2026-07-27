@@ -7,7 +7,7 @@ export default function AnnouncementBar() {
   }
 
   return (
-    <div className={styles.bar} role="banner">
+    <div className={styles.bar} role="region" aria-label="Site announcement">
       <p className={styles.text}>
         Help us preserve Eagle Lake's history —{' '}
         <button className={styles.link} onClick={handleDonateClick}>
