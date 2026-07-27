@@ -16,6 +16,11 @@ writing any code.
 - "run a11y sweep" / "run accessibility sweep" → read
   `.claude/skills/a11y-sweep/SKILL.md`. Manual/opt-in only, same rule as
   visual-check — never run without being asked
+- "manual a11y check" / "human accessibility check" → read
+  `.claude/skills/manual-a11y-verification/SKILL.md`. Checklist of
+  issues no automated tool or AI code review can verify (skip links,
+  tab order, screen-reader quality, zoom, motion, etc.) — manual/opt-in
+  only, same rule as visual-check
 
 ## Commands
 - Start dev server: `npm run dev`
@@ -94,3 +99,5 @@ to `main`). Remaining work is client-dependent, not build-dependent:
   `.claude/skills/4-tdd/fe-standards.md`
 - Accessibility checklist → `.claude/skills/4-tdd/a11y-checklist.md`
 - Real-browser accessibility sweep → `.claude/skills/a11y-sweep/SKILL.md`
+- Manual a11y checklist (what no tool can verify) →
+  `.claude/skills/manual-a11y-verification/SKILL.md`
