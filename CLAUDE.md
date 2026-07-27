@@ -50,12 +50,14 @@ writing any code.
   opens a PR automatically; both stay explicit, developer-initiated steps
 - jest-axe, eslint-plugin-jsx-a11y, a hand-rolled WCAG contrast-ratio
   checker, and a real-browser Playwright+axe-core sweep are all wired up
-  (issue #1, 2026-07-27). The real-browser sweep already found genuine
-  color-contrast and duplicate-banner-landmark issues on the live site —
-  see issue tracker for the follow-up mass-fix issue that addresses them
-- README's "WCAG 2.1 AA compliance" claim is now partially test-backed by
-  the tooling above, but whether to reword or badge it is still an open,
-  deliberately deferred decision — not resolved yet
+  (issue #1). The sweep's initial run found 312 color-contrast + 6
+  landmark violations on the live site — all fixed (issue #3, 0
+  violations as of 2026-07-27). Every component now has RTL + jest-axe
+  test coverage (issue #4) — `npm test` and `npm run test:a11y` are both
+  100% green
+- README's "WCAG 2.1 AA compliance" claim is now real-browser test-backed
+  (0 known violations, verified sitewide), but whether to reword or badge
+  it is still an open, deliberately deferred decision — not resolved yet
 - Run tests before every commit
 
 ---

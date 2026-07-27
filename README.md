@@ -22,7 +22,8 @@ This is a donated services project built pro bono as a first freelance engagemen
 - **Contact form** — Netlify Forms shell, routes submissions to the association's inbox
 - **Custom gate seal logo** — SVG homage to the original 1907-style gate motif from the previous developer's logo
 - **Custom favicon** — two-color SVG favicon matching the seal
-- **Fully accessible** — Radix UI Dialog for focus-trapped modals, semantic HTML throughout, ARIA labels, keyboard navigation
+- **Fully accessible** — Radix UI Dialog for focus-trapped modals, semantic HTML throughout, ARIA labels, keyboard navigation, skip-to-content link
+- **Automated accessibility testing** — every component has jest-axe coverage, plus a real-browser Playwright + axe-core sweep across the full page (homepage, mobile nav, building modals) — 0 known violations as of the last run
 
 ---
 
@@ -35,6 +36,8 @@ This is a donated services project built pro bono as a first freelance engagemen
 | Radix UI Dialog                | Accessible building detail modals              |
 | @tabler/icons-react            | Icon system                                    |
 | Framer Motion                  | Animation primitives                           |
+| Jest + React Testing Library + jest-axe | Component tests + accessibility checks|
+| Playwright + axe-core          | Real-browser accessibility sweep               |
 | Netlify                        | Hosting + form handling                        |
 
 ---
