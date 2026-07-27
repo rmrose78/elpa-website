@@ -43,7 +43,9 @@
 .brandSub {
   font-family: $font-body;
   font-size: 0.625rem;
-  color: rgba($white, 0.25);
+  // 0.25 failed WCAG AA 4.5:1 against $footer-bg; 0.45 is the minimum
+  // that clears it, bumped further for a safety margin.
+  color: rgba($white, 0.5);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
@@ -52,7 +54,7 @@
 .brandDesc {
   font-family: $font-body;
   font-size: 0.75rem;
-  color: rgba($white, 0.3);
+  color: rgba($white, 0.55);
   line-height: 1.65;
 }
 
@@ -78,7 +80,7 @@
 .link {
   font-family: $font-body;
   font-size: 0.8125rem;
-  color: rgba($white, 0.35);
+  color: rgba($white, 0.6);
   text-align: left;
   transition: color $transition-base;
 
@@ -102,5 +104,5 @@
 .copy {
   font-family: $font-body;
   font-size: 0.6875rem;
-  color: rgba($white, 0.18);
+  color: rgba($white, 0.48);
 }
