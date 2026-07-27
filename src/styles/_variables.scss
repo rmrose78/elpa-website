@@ -1,8 +1,11 @@
 // ─── Colors ───────────────────────────────────────────────────────────────────
 
 $ink: #1e1c18;
-$ink-mid: rgba(30, 28, 24, 0.6);
-$ink-faint: rgba(30, 28, 24, 0.35);
+// 0.6/0.35 failed WCAG AA 4.5:1 against parchment-dark (the darkest bg
+// these tokens are used on) -- bumped to the minimum that clears all
+// three light backgrounds (white/parchment/parchment-dark) with margin.
+$ink-mid: rgba(30, 28, 24, 0.7);
+$ink-faint: rgba(30, 28, 24, 0.64);
 $parchment: #f5f0e8;
 $parchment-dark: #ede6d6;
 $white: #ffffff;
