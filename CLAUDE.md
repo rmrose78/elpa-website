@@ -55,9 +55,13 @@ writing any code.
   violations as of 2026-07-27). Every component now has RTL + jest-axe
   test coverage (issue #4) — `npm test` and `npm run test:a11y` are both
   100% green
-- README's "WCAG 2.1 AA compliance" claim is now real-browser test-backed
-  (0 known violations, verified sitewide), but whether to reword or badge
-  it is still an open, deliberately deferred decision — not resolved yet
+- README's "WCAG 2.1 AA" claim is worded as automated-testing-backed with
+  manual review pending, not a flat compliance claim — 0 known violations
+  from tooling is real evidence, but not the same as verified conformance
+  (real screen-reader/AT testing, content clarity, etc. — the exact gaps
+  `.claude/skills/manual-a11y-verification/SKILL.md` catalogs — haven't
+  been run yet). Resolved 2026-07-27; update this note if that wording
+  changes again
 - Run tests before every commit
 
 ---

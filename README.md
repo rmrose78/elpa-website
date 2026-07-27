@@ -75,7 +75,7 @@ elpa-favicon.svg
 | **Built with**    | Microsoft FrontPage 2007 | Vite + React 19 + TypeScript              |
 | **Last updated**  | 2007                     | 2025                                      |
 | **Mobile**        | No                       | Yes — mobile-first                        |
-| **Accessibility** | None                     | WCAG 2.1 AA                               |
+| **Accessibility** | None                     | WCAG 2.1 AA — automated testing, 0 known violations; manual review pending |
 | **Deployment**    | Manual FTP               | Auto-deploy via Netlify on push to `main` |
 
 ---
